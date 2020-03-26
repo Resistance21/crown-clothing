@@ -3,6 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 
+
 const config = {
     apiKey: "AIzaSyBrkMDi2pOT_sZouCA7RkgB2R-Lh2SGmnA",
     authDomain: "crown-clothing-db-8635e.firebaseapp.com",
@@ -42,7 +43,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
             console.log(`error making user`);
         }
     }
-
     return userRef;
     //console.log(snapShot)
 }
